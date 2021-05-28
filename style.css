@@ -1,0 +1,31 @@
+header {
+    text-align: center;
+    margin: 10% 20%;
+    border: blue 2px solid;
+    width: 60%;
+}
+
+
+
+
+.short-div {
+    border: black solid 2px;
+}
+
+.selected-city {
+    margin-bottom: 10px
+}
+
+.five-day {
+}
+
+.cities {
+    border: green 2px solid;
+    text-align: center;
+}
+
+.input {
+    border: none;
+    background-color: rgba(128, 128, 128, 0.267);
+    text-align: center;
+}
