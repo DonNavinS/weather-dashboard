@@ -1,3 +1,4 @@
+
 header {
     text-align: center;
     margin: 10% 20%;
@@ -13,11 +14,44 @@ header {
 }
 
 .selected-city {
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    padding-bottom: 200px;
 }
 
 .five-day {
+    padding-bottom: 100px;
 }
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+}
+
+.card-one {
+    border: red 2px solid;
+    padding: 80px 50px;
+}
+.card-two {
+    border: red 2px solid;
+    padding: 80px 50px;
+}
+.card-three {
+    border: red 2px solid;
+    padding: 80px 50px;
+}
+.card-four {
+    border: red 2px solid;
+    padding: 80px 50px;
+}
+.card-five {
+    border: red 2px solid;
+    padding: 80px 50px;
+}
+
 
 .cities {
     border: green 2px solid;
