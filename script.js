@@ -52,7 +52,7 @@ buttonEl.addEventListener("click", search);
 
 function search() {
     // Obtain Longitude and Latitude values to be used in the next API, since it requires longitude and latitude values to obtain weather data
-    fetch('http://api.openweathermap.org/data/2.5/weather?q=' + inputEl.value + '&appid=5f2d5d2083093f3a5669fa9be777a716')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputEl.value + '&appid=5f2d5d2083093f3a5669fa9be777a716')
 
     .then(response => response.json())
     .then(data => { 
@@ -95,7 +95,7 @@ function search() {
 
         // Obtain API Data for 5-Day Forecast
 
-        fetch('http://api.openweathermap.org/data/2.5/forecast?q=' + inputEl.value + '&appid=5f2d5d2083093f3a5669fa9be777a716')
+        fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + inputEl.value + '&appid=5f2d5d2083093f3a5669fa9be777a716')
 
         .then(response => response.json())
         .then(data => {
