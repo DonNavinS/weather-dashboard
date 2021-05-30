@@ -1,9 +1,12 @@
-
 header {
     text-align: center;
-    margin: 10% 20%;
-    border: blue 2px solid;
-    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 5px;
+    background: rgba(0, 0, 255, 0.384);
+    width:82%;
+
 }
 
 
@@ -13,14 +16,52 @@ header {
     border: black solid 2px;
 }
 
+
+.cities {
+    border: black solid 1px;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.308);
+}
+
 .selected-city {
     margin-bottom: 10px;
     padding-bottom: 100px;
+    background-color: rgba(128, 128, 128, 0.308);
 }
 
+
 .five-day {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
+    background-color: rgba(128, 128, 128, 0.308);
 }
+
+.title {
+    padding: 10px 20px;
+}
+h3 {
+    margin-left: 20px;
+}
+
+.UV-index-low {
+    background-color:  green;
+    width: fit-content;
+    border-radius: 6px;
+    padding: 2px;
+}
+
+.UV-index-moderate {
+    background-color:  blue;
+    width: fit-content;
+    border-radius: 6px;
+    padding: 2px;
+}
+.UV-index-severe {
+    background-color:  red;
+    width: fit-content;
+    border-radius: 6px;
+    padding: 2px;
+}
+
 
 .cards {
     display: flex;
@@ -28,7 +69,7 @@ header {
     column-gap: 30px;
     justify-content: center;
     align-items: center;
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 .card-one-through-five {
@@ -38,11 +79,6 @@ header {
 }
 
 
-.cities {
-    border: green 2px solid;
-    text-align: center;
-}
-
 .cities-list {
     display:flex;
     flex-direction: column;
@@ -50,12 +86,17 @@ header {
 
 .input {
     border: none;
-    background-color: rgba(128, 128, 128, 0.267);
+    border-radius: 4px;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.178);
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .history {
     margin: 20px 0px;
     padding-top: 25px;
+    font-size: 20px;
 }

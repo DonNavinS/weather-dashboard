@@ -42,6 +42,7 @@ var cityHistory5;
 var cityHistory6;
 var cityHistory7;
 var cityHistory8;
+var cityHistory9;
 
 
 
@@ -72,6 +73,15 @@ function search() {
             var cityHumidity = data['current']['humidity']
             var cityUV = data['current']['uvi']
 
+            //Set background colour based on UV Index value 
+            if (cityUV <2){
+            UVIndexEl.className = 'UV-index-low'
+            } else if (cityUV > 6) {
+                UVIndexEl.className = 'UV-index-severe'
+            } else {
+                UVIndexEl.className = 'UV-index-moderate'
+            }
+
 
             tempEl.innerHTML = 'Temperature = ' + cityTemp +'°C'
             windEl.innerHTML = 'Wind Speed = ' + cityWind + 'km/h'
@@ -92,7 +102,7 @@ function search() {
             
             //Card One
 
-            var cityTemp1 = data['list']['2']['main']['temp']
+            var cityTemp1 = Math.floor(data['list']['2']['main']['temp'] -273)
             var cityWind1 = data['list']['2']['wind']['speed']
             var cityHum1 = data['list']['2']['main']['humidity']
 
@@ -103,7 +113,7 @@ function search() {
             cardOneHumEl.innerHTML = 'Humidity = ' + cityHum1 + '%';
 
             //Card Two
-            var cityTemp2 = data['list']['10']['main']['temp']
+            var cityTemp2 = Math.floor(data['list']['10']['main']['temp'] -273)
             var cityWind2 = data['list']['10']['wind']['speed']
             var cityHum2 = data['list']['10']['main']['humidity']
 
@@ -114,7 +124,7 @@ function search() {
             cardTwoHumEl.innerHTML = 'Humidity = ' + cityHum2 + '%';
 
             //Card Three
-            var cityTemp3 = data['list']['18']['main']['temp']
+            var cityTemp3 = Math.floor(data['list']['18']['main']['temp'] -273)
             var cityWind3 = data['list']['18']['wind']['speed']
             var cityHum3 = data['list']['18']['main']['humidity']
 
@@ -125,7 +135,7 @@ function search() {
             cardThreeHumEl.innerHTML = 'Humidity = ' + cityHum3 + '%';
 
             //Card Four            
-            var cityTemp4 = data['list']['26']['main']['temp']
+            var cityTemp4 = Math.floor(data['list']['26']['main']['temp'] -273)
             var cityWind4 = data['list']['26']['wind']['speed']
             var cityHum4 = data['list']['26']['main']['humidity']
 
@@ -136,7 +146,7 @@ function search() {
             cardFourHumEl.innerHTML = 'Humidity = ' + cityHum4 + '%';
 
             //Card Five
-            var cityTemp5 = data['list']['32']['main']['temp']
+            var cityTemp5 = Math.floor(data['list']['32']['main']['temp'] -273)
             var cityWind5 = data['list']['32']['wind']['speed']
             var cityHum5 = data['list']['32']['main']['humidity']
 
@@ -158,7 +168,6 @@ function search() {
 
 }
 
-var searchedCities = 0;
 
 // Creating buttons for cities that have already been searched
 buttonEl.addEventListener("click", function() {
@@ -172,14 +181,11 @@ buttonEl.addEventListener("click", function() {
     
 
 
-
-   
     } else if (cityHistory2 == undefined){
     cityHistory2 = document.createElement("button");
     cityHistory2.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
     cityHistory2.className = 'history btn btn-primary'
     citiesListEl.appendChild(cityHistory2);
-
 
 
     } else if (cityHistory3 == undefined){
@@ -218,6 +224,12 @@ buttonEl.addEventListener("click", function() {
         cityHistory8.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
         cityHistory8.className = 'history btn btn-primary'
         citiesListEl.appendChild(cityHistory8);
+    
+    } else if (cityHistory9 == undefined){
+        cityHistory9 = document.createElement("button");
+        cityHistory9.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
+        cityHistory9.className = 'history btn btn-primary'
+        citiesListEl.appendChild(cityHistory9);
     
     } 
 
@@ -258,6 +270,11 @@ buttonEl.addEventListener("click", function() {
 
     cityHistory8.addEventListener("click", function() {
         inputEl.value = cityHistory8.innerHTML;
+        search();
+    })
+
+    cityHistory9.addEventListener("click", function() {
+        inputEl.value = cityHistory9.innerHTML;
         search();
     })
 
