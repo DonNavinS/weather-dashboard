@@ -175,59 +175,59 @@ buttonEl.addEventListener("click", function() {
 
     if (cityHistory1 == undefined && inputEl.value !== "") {
         cityHistory1 = document.createElement("button");
-        cityHistory1.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
+        cityHistory1.innerHTML = inputEl.value;
         cityHistory1.className = 'history btn btn-primary'
         citiesListEl.appendChild(cityHistory1);
     
 
 
-    } else if (cityHistory2 == undefined){
+    } else if (cityHistory2 == undefined && inputEl.value !== "" && inputEl.value !== cityHistory1.innerHTML) {
     cityHistory2 = document.createElement("button");
-    cityHistory2.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
+    cityHistory2.innerHTML = inputEl.value;
     cityHistory2.className = 'history btn btn-primary'
     citiesListEl.appendChild(cityHistory2);
 
 
-    } else if (cityHistory3 == undefined){
+    } else if (cityHistory3 == undefined && inputEl.value !== "" && inputEl.value !== cityHistory1.innerHTML && inputEl.value !== cityHistory2.innerHTML ){
         cityHistory3 = document.createElement("button");
-        cityHistory3.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
+        cityHistory3.innerHTML = inputEl.value;
         cityHistory3.className = 'history btn btn-primary'
         citiesListEl.appendChild(cityHistory3);
     
 
-    } else if (cityHistory4 == undefined){
+    } else if (cityHistory4 == undefined && inputEl.value !== "" && inputEl.value !== cityHistory1.innerHTML && inputEl.value !== cityHistory2.innerHTML && inputEl.value !== cityHistory3.innerHTML){
         cityHistory4 = document.createElement("button");
-        cityHistory4.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
+        cityHistory4.innerHTML = inputEl.value;
         cityHistory4.className = 'history btn btn-primary'
         citiesListEl.appendChild(cityHistory4);
     
-    } else if (cityHistory5 == undefined){
+    } else if (cityHistory5 == undefined && inputEl.value !== "" && inputEl.value !== cityHistory1.innerHTML && inputEl.value !== cityHistory2.innerHTML && inputEl.value !== cityHistory3.innerHTML && inputEl.value !== cityHistory4.innerHTML){
         cityHistory5 = document.createElement("button");
-        cityHistory5.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
+        cityHistory5.innerHTML = inputEl.value;
         cityHistory5.className = 'history btn btn-primary'
         citiesListEl.appendChild(cityHistory5);
     
-    } else if (cityHistory6 == undefined){
+    } else if (cityHistory6 == undefined && inputEl.value !== "" && inputEl.value !== cityHistory1.innerHTML && inputEl.value !== cityHistory2.innerHTML && inputEl.value !== cityHistory3.innerHTML && inputEl.value !== cityHistory4.innerHTML && inputEl.value !== cityHistory5.innerHTML){
         cityHistory6 = document.createElement("button");
-        cityHistory6.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
+        cityHistory6.innerHTML = inputEl.value;
         cityHistory6.className = 'history btn btn-primary'
         citiesListEl.appendChild(cityHistory6);
     
-    } else if (cityHistory7 == undefined){
+    } else if (cityHistory7 == undefined && inputEl.value !== "" && inputEl.value !== cityHistory1.innerHTML && inputEl.value !== cityHistory2.innerHTML && inputEl.value !== cityHistory3.innerHTML && inputEl.value !== cityHistory4.innerHTML && inputEl.value !== cityHistory5.innerHTML && inputEl.value !== cityHistory6.innerHTML){
         cityHistory7 = document.createElement("button");
-        cityHistory7.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
+        cityHistory7.innerHTML = inputEl.value;
         cityHistory7.className = 'history btn btn-primary'
         citiesListEl.appendChild(cityHistory7);
     
-    } else if (cityHistory8 == undefined){
+    } else if (cityHistory8 == undefined && inputEl.value !== "" && inputEl.value !== cityHistory1.innerHTML && inputEl.value !== cityHistory2.innerHTML && inputEl.value !== cityHistory3.innerHTML && inputEl.value !== cityHistory4.innerHTML && inputEl.value !== cityHistory5.innerHTML && inputEl.value !== cityHistory6.innerHTML && inputEl.value !== cityHistory7.innerHTML){
         cityHistory8 = document.createElement("button");
-        cityHistory8.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
+        cityHistory8.innerHTML = inputEl.value;
         cityHistory8.className = 'history btn btn-primary'
         citiesListEl.appendChild(cityHistory8);
     
-    } else if (cityHistory9 == undefined){
+    } else if (cityHistory9 == undefined && inputEl.value !== "" && inputEl.value !== cityHistory1.innerHTML && inputEl.value !== cityHistory2.innerHTML && inputEl.value !== cityHistory3.innerHTML && inputEl.value !== cityHistory4.innerHTML && inputEl.value !== cityHistory5.innerHTML && inputEl.value !== cityHistory6.innerHTML && inputEl.value !== cityHistory7.innerHTML && inputEl.value !== cityHistory8.innerHTML){
         cityHistory9 = document.createElement("button");
-        cityHistory9.innerHTML = inputEl.value.charAt(0).toUpperCase()+inputEl.value.slice(1);
+        cityHistory9.innerHTML = inputEl.value;
         cityHistory9.className = 'history btn btn-primary'
         citiesListEl.appendChild(cityHistory9);
     
