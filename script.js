@@ -233,6 +233,7 @@ buttonEl.addEventListener("click", function() {
     
     } 
 
+    // Displays results for cities from search history when respective button is clicked
     cityHistory1.addEventListener("click", function() {
         inputEl.value = cityHistory1.innerHTML;
         search();
@@ -280,8 +281,6 @@ buttonEl.addEventListener("click", function() {
 
 
 })
-
-
 
 
 
